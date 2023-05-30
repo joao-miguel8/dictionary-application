@@ -1,0 +1,95 @@
+:root {
+  --ff: 'Open Sans';
+  --bg01: #141414;
+  --logoTextColor: #D4D4D4;
+  --h1TextColor: #FFFFFF;
+  --h2TextColor: #FDFDFD;
+  --bodyTextColor01: #5A5A5A;
+  --textColor02: #9F9F9F;
+  --textColor03: #4D5E96;
+  --button-bg01: #FEFEFE;
+  --buttonBorderColor01: #4d4d4d;
+  --navBorderColor:  #2d2d2d;
+
+}
+
+/* Font Weights
+Light 300
+Light 300 italic
+Regular 400
+Regular 400 italic
+Medium 500
+Medium 500 italic
+Semibold 600
+Semibold 600 italic
+Bold 700
+Bold 700 italic
+*/
+
+
+/* General Styles */
+
+body {
+  background: var(--bg01);
+}
+
+
+/* header section */
+
+nav {
+  border-bottom: .2px solid var(--navBorderColor);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  font-family: var(--ff);
+}
+
+.logoName {
+  color: var(--logoTextColor);
+  font-size: .8rem;
+}
+
+/* -------------------------- */
+
+/* Chosen word container */
+
+.chosen-word {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chosen-word h1 {
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: var(--h1TextColor);
+}
+
+.chosen-word__audio-button {
+  background: none;
+  border: .5px solid var(--buttonBorderColor01);
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.chosen-word__audio-button i {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--button-bg01);
+}
+
+.chosen-word__audio-button span {
+  color: white;
+  font-weight: var(--ff);
+}
