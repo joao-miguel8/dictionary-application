@@ -6,10 +6,11 @@
   --h2TextColor: #FDFDFD;
   --bodyTextColor01: #5A5A5A;
   --textColor02: #9F9F9F;
-  --textColor03: #4D5E96;
+  --textColor03: #425db8;
   --button-bg01: #FEFEFE;
   --buttonBorderColor01: #4d4d4d;
   --navBorderColor:  #2d2d2d;
+  --searchInputBackground: #242424;
 
 }
 
@@ -33,11 +34,18 @@ body {
   background: var(--bg01);
 }
 
+main {
+  margin: 0 70px;
+}
 
 /* header section */
 
-nav {
+header {
   border-bottom: .2px solid var(--navBorderColor);
+}
+
+nav {
+  margin: 0 20px;
   min-height: 40px;
   display: flex;
   align-items: center;
@@ -57,31 +65,45 @@ nav {
   min-height: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  margin: 0 0 80px 0;
 }
+
+.chosen-word__search {
+  min-width: 200px;
+  align-self: flex-start;
+  background: var(--searchInputBackground);
+  color: var(--textColor02);
+  border: none;
+padding: 4px;
+margin: 10px 0 0 0;
+outline: none;
+}
+
 
 .chosen-word h1 {
   font-size: 3.8rem;
   font-weight: 600;
   color: var(--h1TextColor);
+  margin: 20px 0 0 0;
 }
 
 .chosen-word__audio-button {
-  background: none;
-  border: .5px solid var(--buttonBorderColor01);
   min-width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 6px 4px;
+  border: .5px solid var(--buttonBorderColor01);
+  background: none;
   border-radius: 34px;
+  padding: 6px 4px;
   cursor: pointer;
 }
 
 .chosen-word__audio-button i {
-  width: 24px;
-  height: 24px;
+  max-width: 24px;
+  max-height: 24px;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -92,4 +114,88 @@ nav {
 .chosen-word__audio-button span {
   color: white;
   font-weight: var(--ff);
+}
+
+/* --------------------- */
+/* --------------------- */
+
+/* word-details-information section */
+
+.word-details-information {
+  display: flex;
+  color: white;
+}
+
+.word-details-information-wrapper {
+  /* border: 1px solid rgb(0, 4, 255); */
+}
+
+.word-details-information__left-content-card {
+  display: flex;
+}
+
+.left-content-container__verb-container {
+  display: flex;
+  flex-basis: 100px;
+  justify-content: center;
+  border: .5px solid var(--buttonBorderColor01);
+}
+
+.left-content-container__verb-container h3 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--h2TextColor);
+  margin: 20px 0 0 40px;
+}
+
+/* .................... */
+
+.left-content-container__main-info {
+  max-height: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 12px;
+  border: .5px solid var(--buttonBorderColor01);
+  padding: 12px;
+}
+
+.main-info__word-definition h4 {
+  font-size: 1.4rem;
+}
+
+.main-info__example {
+font-size: .8rem;
+color: var(--textColor02);
+}
+.main-info__example h4 {
+font-size: 1rem;
+color: var(--textColor02);
+text-transform: capitalize;
+}
+
+.main-info__synonyms {
+  margin: 20px 0 0 0;
+}
+
+.main-info__synonyms h5, .main-info__antonyms h5 {
+  text-transform: capitalize;
+}
+
+.main-info__synonyms, .main-info__antonyms {
+  display: flex;
+  gap: 16px;
+}
+.main-info__synonyms p, .main-info__antonyms p{
+  word-spacing: .5rem;
+  color: var(--textColor03);
+}
+
+
+
+/* Additional Styles */
+
+.chosen-word__audio-button:hover {
+background: #3a3a3a;
 }
