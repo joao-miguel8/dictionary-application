@@ -69,7 +69,7 @@ nav {
   margin: 0 0 80px 0;
 }
 
-.chosen-word__search {
+.search-input {
   min-width: 200px;
   align-self: flex-start;
   background: var(--searchInputBackground);
@@ -86,6 +86,7 @@ outline: none;
   font-weight: 600;
   color: var(--h1TextColor);
   margin: 20px 0 0 0;
+  min-width: 200px;
 }
 
 .chosen-word__audio-button {
@@ -126,12 +127,10 @@ outline: none;
   color: white;
 }
 
-.word-details-information-wrapper {
-  /* border: 1px solid rgb(0, 4, 255); */
-}
 
 .word-details-information__left-content-card {
   display: flex;
+  min-height: 200px;
 }
 
 .left-content-container__verb-container {
@@ -167,11 +166,9 @@ outline: none;
 
 .main-info__example {
 font-size: .8rem;
-color: var(--textColor02);
 }
 .main-info__example h4 {
 font-size: 1rem;
-color: var(--textColor02);
 text-transform: capitalize;
 }
 

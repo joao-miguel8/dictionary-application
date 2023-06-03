@@ -13,8 +13,9 @@
   <!-- css file imports -->
   <link rel="stylesheet" href="../dictionary-application/css/default.css">
   <link rel="stylesheet" href="../dictionary-application/css/style.css">
+  
   <!-- JS file imports -->
-  <script src="../dictionary-application/js/main.js"></script>
+  <script  src="../dictionary-application/js/main.js" defer></script>
   <title>Dictionary.com</title>
 </head>
 <body>
@@ -24,9 +25,9 @@
     </nav>
   </header>
   <main>
+    <input class="search-input" type="text" placeholder="search for a word">
     <section class="chosen-word">
-        <h1>Space</h1>
-        <input class="chosen-word__search" type="text" placeholder="search for a word">
+        <h1 class="word-searched" >Space</h1>
       <!-- </div> -->
       <button class="chosen-word__audio-button">
         <i class="fa-solid fa-play"></i>
@@ -75,20 +76,20 @@
           
             <div class="left-content-container__main-info">
               <div class="main-info__word-definition">
-                <h4>Definition</h4>
-                <p> sapiente, voluptate,Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet. elit. Quam, eos? ducimus, voluptatum</p>
+                <h4>Definition:</h4>
+                <p></p>
               </div>
               <div class="main-info__example">
-                <h4>example</h4>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h4>example:</h4>
+                <p></p>
               </div>
               <div class="main-info__synonyms">
-                <h5>synonyms</h5>
-                <p>dipisicing, elit, nobis, corporis, recusandae, aliquam </p>
+                <h5>synonyms:</h5>
+                <p></p>
               </div>
               <div class="main-info__antonyms">
-                <h5>antonyms</h5>
-                <p>lorem, ipsum, dolor, sit, amet, consectetur, adipisicing</p>
+                <h5>antonyms:</h5>
+                <p></p>
               </div>
           </div>
         </div>
